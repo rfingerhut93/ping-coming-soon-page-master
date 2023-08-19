@@ -1,21 +1,18 @@
+
 document.getElementById("emailForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
     checkEmail();
 });
 
 function checkEmail(){
-    const errorMsgContainer = document.getElementById('errorMessageContainer');
     const emailInput = document.getElementById('email');
-    const message = document.createElement('p');
     clearErrorMessage(); // Clear any existing error message
 
     if(!isValidEmail()){
         emailInput.classList.add('error');
-        message.textContent = "Please provide a valid email address."
-        errorMsgContainer.appendChild(message);
+        errorMessage();
     } else{
         emailInput.classList.remove('error');
-        message.textContent = ""
         alert("Submitted successfully!");
     }
     emailInput.value="";
@@ -30,7 +27,7 @@ function isValidEmail(){
 
 function errorMessage(){
     const message = document.createElement('p');
-    message.textContent = "Not valid email";
+    message.textContent = "Please provide a valid email address";
     document.getElementById("errorMessageContainer").appendChild(message);
 }
 
