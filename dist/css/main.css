@@ -49,33 +49,43 @@ html body #container form {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  margin-bottom: 2vh;
 }
-html body #container form input {
+html body #container form #email {
   border: 1px solid hsl(0, 0%, 59%);
   border-radius: 25px;
-  height: 50px;
+  height: 5vh;
   margin-top: 10px;
   padding: 0 10px;
   font-size: 1rem;
 }
-html body #container form input::-moz-placeholder {
+html body #container form #email::-moz-placeholder {
   font-size: 1rem;
 }
-html body #container form input::placeholder {
+html body #container form #email::placeholder {
   font-size: 1rem;
 }
 html body #container form button {
   border-radius: 25px;
-  height: 50px;
+  height: 5vh;
   margin-top: 10px;
   background-color: hsl(223, 87%, 63%);
   border: none;
+  outline: none;
   color: white;
   font-weight: 700;
   font-size: 0.9rem;
   box-shadow: -1px 10px 30px 2px rgba(0, 0, 0, 0.29);
   -webkit-box-shadow: -1px 10px 30px 2px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: -1px 10px 30px 2px rgba(0, 0, 0, 0.29);
+}
+html body #container input.error {
+  border: 2px solid rgba(255, 0, 0, 0.568) !important;
+}
+html body #container #errorMessageContainer p {
+  color: red;
+  font-style: italic;
+  font-size: 1rem;
 }
 html body #container #img-container {
   display: flex;
@@ -141,9 +151,12 @@ html body .attribution a {
   }
   html body #container form input {
     flex-basis: 70%;
+    height: 5vh;
+    margin: 0;
   }
   html body #container form button {
     flex-basis: 25%;
+    height: 5vh;
   }
   html body #container form button:hover {
     background-color: hsl(354, 100%, 66%);
