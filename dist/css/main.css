@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Libre Franklin", sans-serif;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+html body #container {
+  width: 375px;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+html body #container #top-section {
+  text-align: center;
+  padding: 20px 0;
+}
+html body #container #top-section #message {
+  font-weight: 300;
+  margin-top: 5px;
+}
+html body #container #top-section #message #gray-font {
+  color: hsl(0, 0%, 59%);
+}
+html body #container #top-section #title {
+  margin-top: 10px;
+  font-weight: 700;
+}
+html body #container #top-section #subscribe {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+html body #container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 2vh;
+}
+html body #container form #email {
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 25px;
+  height: 5vh;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+html body #container form #email::-moz-placeholder {
+  font-size: 1rem;
+}
+html body #container form #email::placeholder {
+  font-size: 1rem;
+}
+html body #container form button {
+  border-radius: 25px;
+  height: 5vh;
+  margin-top: 10px;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: -1px 10px 30px 2px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: -1px 10px 30px 2px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: -1px 10px 30px 2px rgba(0, 0, 0, 0.29);
+}
+html body #container input.error {
+  border: 2px solid rgba(255, 0, 0, 0.568) !important;
+}
+html body #container #errorMessageContainer p {
+  color: red;
+  font-style: italic;
+  font-size: 1rem;
+}
+html body #container #img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+html body #container #img-container img {
+  max-width: 100%;
+}
+html body #container #socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+  align-items: center;
+  margin: auto;
+}
+html body #container #socials button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+html body #container #socials button i {
+  color: hsl(223, 87%, 63%);
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+html body #container #copyright {
+  padding: 10px 0;
+  text-align: center;
+}
+html body #container #copyright h3 {
+  font-size: 0.9rem;
+}
+html body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+html body .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 800px) {
+  html body #container {
+    width: 800px;
+  }
+  html body #container #top-section #title {
+    margin: 50px 0;
+  }
+  html body #container #top-section #message {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  html body #container form {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  html body #container form input {
+    flex-basis: 70%;
+    height: 5vh;
+    margin: 0;
+  }
+  html body #container form button {
+    flex-basis: 25%;
+    height: 5vh;
+  }
+  html body #container form button:hover {
+    background-color: hsl(354, 100%, 66%);
+  }
+  html body #container #socials {
+    width: 40%;
+    align-items: center;
+    margin: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
