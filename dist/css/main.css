@@ -12,7 +12,6 @@ html {
   font-family: "Libre Franklin", sans-serif;
 }
 html body {
-  font-family: "Libre Franklin", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +41,7 @@ html body #container #top-section #title {
   font-weight: 700;
 }
 html body #container #top-section #subscribe {
+  margin-top: 15px;
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -90,8 +90,9 @@ html body #container #socials {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 30px 0;
-  width: 100%;
+  width: 60%;
+  align-items: center;
+  margin: auto;
 }
 html body #container #socials button {
   border-radius: 50%;
